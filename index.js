@@ -1,1 +1,2 @@
-console.log("Salve")
+let nome= "Salve"
+console.log(nome)
