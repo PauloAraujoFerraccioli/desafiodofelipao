@@ -1,0 +1,32 @@
+let vitorias = 0;
+let derrotas = 0;
+
+// Pergunta ao usuário por vitórias e derrotas
+vitorias = parseInt(prompt("Quantas vitórias você tem?"));
+derrotas = parseInt(prompt("Quantas derrotas você tem?"));
+
+// Calcula o saldo de vitórias
+let saldoVitorias = vitorias - derrotas;
+
+// Define o nível do herói com base no saldo de vitórias
+let nivel;
+
+if (saldoVitorias <= 10) {
+    nivel = "Ferro";
+} else if (saldoVitorias <= 20) {
+    nivel = "Bronze";
+} else if (saldoVitorias <= 50) {
+    nivel = "Prata";
+} else if (saldoVitorias <= 80) {
+    nivel = "Ouro";
+} else if (saldoVitorias <= 90) {
+    nivel = "Diamante";
+} else if (saldoVitorias <= 100) {
+    nivel = "Lendário";
+} else {
+    nivel = "Imortal";
+}
+
+// Saída final
+console.log("Bem-vindo à Calculadora de Partidas Ranqueadas!");
+console.log(`O herói tem um saldo de vitórias de ${saldoVitorias} e está no nível ${nivel}.`);
